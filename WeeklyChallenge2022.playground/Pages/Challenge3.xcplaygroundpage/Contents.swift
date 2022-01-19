@@ -17,3 +17,25 @@ import Foundation
  * - Subiré una posible solución al ejercicio el lunes siguiente al de su publicación.
  *
  */
+
+func isPrime(_ number: Int) -> Bool {
+    guard number > 1 else { return false }
+    
+    for num in 2..<number {
+        if number % num == 0 {
+            return false
+        }
+    }
+    
+    return true
+}
+
+print(isPrime(7))
+
+var primes: [Int] = []
+for prime in 1...100 {
+    if isPrime(prime) {
+        primes.append(prime)
+    }
+}
+print(primes)
