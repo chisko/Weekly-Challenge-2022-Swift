@@ -22,10 +22,10 @@ import Foundation
  */
 
 func caracteres(str1: String, str2: String) {
-    print(str1.filter { !str2.contains($0) })
-    print(str2.filter { !str1.contains($0) })
+    print(str1.lowercased().filter { !str2.lowercased().contains($0) })
+    print(str2.lowercased().filter { !str1.lowercased().contains($0) })
 }
 
-caracteres(str1: "hola", str2: "adios")
+caracteres(str1: "hOla", str2: "adios")
 
 //: [Next](@next)
