@@ -36,4 +36,10 @@ print(factorial(number: 5))
 print(factorial(number: 6))
 print(factorial(number: 7))
 
+/*
+ func factorial(n: Int) -> Int? {
+     return n < 0 ? nil : n <= 1 ? 1 : n * (factorial(n: n - 1)!)
+ }
+ */
+
 //: [Next](@next)
